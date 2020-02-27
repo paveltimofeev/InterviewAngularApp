@@ -5,4 +5,6 @@ WORKDIR /app
 COPY ./package.json ./
 COPY ./package-lock.json ./
 
+EXPOSE 4200
+
 RUN npm install -g @angular/cli@7.3.8 && npm install
